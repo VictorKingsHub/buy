@@ -7,10 +7,10 @@ const Searchbar = () => {
 
     const router = useRouter()
 
-    const handleSearch = (e: any) => {
-        e.preventDefault()
+    const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
 
-        const formData = new FormData(e.currentTarget);
+        const formData = new FormData(event.currentTarget);
         const name = formData.get("name") as string
 
         if (name) {
