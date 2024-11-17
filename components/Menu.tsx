@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { DiVim } from 'react-icons/di'
 import { IoMenu } from 'react-icons/io5'
 
 const Menu = () => {
